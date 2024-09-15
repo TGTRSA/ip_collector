@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Popppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --color-brownish: #895b4a;
+    --color-milkbrown: #daccba;
+    --color-darkcoffee: #3b2621;
+    --color-beige: #f0eae7;
+    --color-darkerbeige: #9f8c86;
+    --color-softpurple: #a68fb6;
+}
+
+.page1 {
+    background: url(images/Blue_Aesthetic.webp);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;  
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    justify-content: space-between; /* puts all the contents in a single grid and puts space between them*/
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    width: 100%; /* to span full width of container*/
+    list-style: none; /* ensures list properties are next to each other*/
+    display: flex;
+    justify-content: flex-end; /* pushes content to the far right*/
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    padding: 5px 30px;/*this adjusts the inside and outside padding*/
+    cursor: pointer;
+    border-radius: 30px;
+    padding-top: 8px;
+    justify-content: center;
+    right: 10px;
+    transition: 300ms;
+}
+
+nav ul li:hover {
+    background-color: var(--color-brownish);
+    transition: 300ms;
+}
+
+.content {
+    display: inline-block;
+    position: absolute;
+    background: #3b2621;
+    left: 5%;
+    width: 25%;
+    height: 40%;
+    border-radius: 80px;
+    top: 35%;
+}
+
+.content > h1 {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 70px;
+    overflow: visible;
+    
+}
+
+.content > h2 {
+    color: white;
+}
+
+.content > a {
+    position: relative;
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
+    background: #895b4a;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

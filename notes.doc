@@ -1,0 +1,6 @@
+The ip_collector for now has a ip_address and timestamp column, will probably adda name column once the html
+writing starts.
+
+problem with the sql databases and unique constraint after it takes an ip address that already exists a error occurs and this leads to the closin of the databases disallowing any other ip_info to be logged (untagged date)
+
+added a check for IP
